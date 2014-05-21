@@ -76,15 +76,15 @@ map.featureLayer.on('click', function(e) {
    });
 var ui = document.getElementById('map-ui');
 
-var Drenes = L.mapbox.tileLayer('j-ulzurrun.lpul2mmu');
-var Bosque = L.mapbox.tileLayer('cindysanhueza.myhpyz8h');
-var Incendios = L.mapbox.tileLayer('cindysanhueza.i9lb5b8e');
+var Drenes = L.mapbox.tileLayer('cindysanhueza.8sqr5zdj');
+var Bosque = L.mapbox.tileLayer('cindysanhueza.lb8znm2s');
+var Incendios = L.mapbox.tileLayer('cindysanhueza.ptfdnade');
 
 
 
-addLayer(Drenes, L.mapbox.gridLayer('j-ulzurrun.lpul2mmu'),'Drenes', 4);
-addLayer(Bosque, L.mapbox.gridLayer('cindysanhueza.myhpyz8h'),'Bosque nativo', 2);
-addLayer(Incendios, L.mapbox.gridLayer('cindysanhueza.i9lb5b8e'),'Incendios', 10);
+addLayer(Drenes, L.mapbox.gridLayer('cindysanhueza.8sqr5zdj'),'Drenes', 4);
+addLayer(Bosque, L.mapbox.gridLayer('cindysanhueza.lb8znm2s'),'Bosque nativo', 2);
+addLayer(Incendios, L.mapbox.gridLayer('cindysanhueza.ptfdnade'),'Incendios', 10);
 
 
 function addLayer(layer, gridlayer, name, zIndex) {
